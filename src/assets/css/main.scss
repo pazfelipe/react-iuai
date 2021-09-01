@@ -1,0 +1,41 @@
+@import './variables.scss';
+
+.text-primary {
+  color: $primary;
+}
+
+.spinner.primary {
+  color: $primary;
+}
+
+.text-secondary {
+  color: $secondary;
+}
+
+.spinner.secondary {
+  color: $secondary;
+}
+
+.text-warning {
+  color: $warning;
+}
+
+.spinner.warning {
+  color: $warning;
+}
+
+.text-danger {
+  color: $danger;
+}
+
+.spinner.danger {
+  color: $danger;
+}
+
+.text-info {
+  color: $info;
+}
+
+.spinner.info {
+  color: $info;
+}

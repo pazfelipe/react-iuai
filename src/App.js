@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.scss';
 import { Input } from './components';
+import './assets/css/main.scss'
 
 function Top() {
   return (
