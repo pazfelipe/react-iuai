@@ -39,7 +39,6 @@ export const SpinnerDefault = props => {
   return (
     <svg className={`spinner ${color}`} {...svgProps} xmlns="http://www.w3.org/2000/svg">
       {props.children}
-      <text>{props.svg.size}</text>
     </svg>
   );
 }
