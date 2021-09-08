@@ -32,7 +32,7 @@ export class Icon extends Component {
     };
 
     return (
-      <div style={style} className="uiai-icon" />
+      <i style={style} className="uiai-icon" />
     );
   }
 }

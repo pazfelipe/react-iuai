@@ -41,18 +41,6 @@ export class Input extends Component {
           <SpinnerRadio />
           <SpinnerRings />
           <SpinnerTail />
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
 
       </div>

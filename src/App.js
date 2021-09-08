@@ -1,37 +1,25 @@
-import logo from './logo.svg';
 import './App.scss';
-import { Input } from './components';
-import './assets/css/main.scss'
-
-function Top() {
-  return (
-    <span>Span Top</span>
-  );
-}
-
-function Bottom() {
-  return (
-    <span>Span Bottom</span>
-  );
-}
+import './assets/css/main.scss';
+import { Button } from './components/Buttons';
 
 function App() {
+  const alerting = () => alert('Teste');
+  const aalerting = () => alert('Testeeee');
+  const oncontext = event => {
+    event.preventDefault();
+    console.log('direito clicado');
+  };
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Input placeholder="Teste qualquer" content={<button>Teste aqui</button>} top={<Top />} bottom={<Bottom />} />
+        <Button
+          lg
+          label="Teste qualquer"
+          iconLeft="user"
+          onClick={() => alerting()}
+          onDoubleClick={() => aalerting()}
+          onContextMenu={(event) => oncontext(event)}
+        />
       </header>
     </div>
   );

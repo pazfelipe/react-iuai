@@ -39,3 +39,36 @@
 .spinner.info {
   color: $info;
 }
+
+// BUTTON STYLING
+
+.uiai-btn {
+  border: none;
+  color: $secondary;
+  padding: 4px 16px;
+  cursor: pointer;
+  display: flex;
+  height: auto;
+  position: relative;
+  width: auto;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+
+  &__danger {
+    background-color: $danger;
+    color: #fff;
+  }
+
+  & > div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  span.uiai-btn--label {
+    transform: translate(0, -5%);
+    display: inline-block;
+  }
+}
